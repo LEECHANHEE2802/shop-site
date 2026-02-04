@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="다산신도시 6년 운영, 합리적인 조건을 투명하게 안내하는 휴대폰 매장 청년통신" />
+  <meta name="description" content="청년통신 | 다산신도시 6년 운영. 합리적인 조건을 투명하게 안내하는 휴대폰 매장" />
   <title>청년통신 | 다산신도시 6년 운영, 믿고 찾는 휴대폰 매장</title>
 
-  <!-- OG (카톡/당근 공유 미리보기) -->
+  <!-- Premium fonts -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- OG -->
   <meta property="og:title" content="청년통신 | 다산신도시 6년 운영, 믿고 찾는 휴대폰 매장" />
-  <meta property="og:description" content="조건 숨긴 미끼가격이 아니라, 실제 가능한 합리적 견적을 투명하게 안내합니다. 친절 상담 + 사후관리." />
+  <meta property="og:description" content="미끼/조건 숨김 없이, 실제 가능한 합리적 견적을 투명하게 안내합니다. 친절 상담 + 사후관리." />
   <meta property="og:type" content="website" />
-  <!-- 썸네일 이미지를 쓰려면 images/og.jpg 업로드 후 아래 유지 -->
   <meta property="og:image" content="images/og.jpg" />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS (캐시 무력화 버전) -->
+  <link rel="stylesheet" href="style.v2.css" />
 
-  <!-- 구조화 데이터(검색/신뢰도 도움) -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,18 +34,22 @@
       "@type": "PostalAddress",
       "streetAddress": "경기도 남양주시 다산지금로 146번길 27",
       "addressCountry": "KR"
-    }
+    },
+    "url": "https://leechanhee2802.github.io/shop-site/"
   }
   </script>
 </head>
 
 <body>
-  <!-- 상단바 -->
-  <header class="top">
-    <div class="container top-inner">
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
       <a class="brand" href="#top">
-        <span class="brand-badge">청년</span>
-        <span class="brand-name">청년통신</span>
+        <span class="brand__mark">Y</span>
+        <span class="brand__text">
+          <span class="brand__name">청년통신</span>
+          <span class="brand__sub">다산신도시 6년 운영</span>
+        </span>
       </a>
 
       <nav class="nav">
@@ -48,188 +59,191 @@
         <a href="#contact">문의</a>
       </nav>
 
-      <div class="top-cta">
-        <a class="btn btn-ghost btn-small" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">카톡</a>
-        <a class="btn btn-primary btn-small" href="tel:01052442802">전화</a>
+      <div class="topbar__cta">
+        <a class="btn btn--ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">카톡 상담</a>
+        <a class="btn btn--primary" href="tel:01052442802">전화</a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <p class="chip">다산신도시 6년 운영 · 합리적인 조건 · 친절 상담</p>
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="badge-row">
+            <span class="badge">다산신도시</span>
+            <span class="badge badge--soft">6년 운영</span>
+            <span class="badge badge--soft">합리적 견적</span>
+            <span class="badge badge--soft">친절 상담</span>
+          </div>
 
-          <h1>
-            <span class="accent">조건 숨김 없이</span><br/>
-            휴대폰을 쉽고 정확하게 안내하는 매장
+          <h1 class="hero__title">
+            휴대폰, <span class="grad">“진짜 조건”</span>으로<br/>
+            깔끔하게 비교해드립니다
           </h1>
 
-          <p class="sub">
-            청년통신은 “말만 싼 가격”이 아니라, <b>실제로 가능한 합리적인 견적</b>을
-            <b>요금제/지원금/약정/부가서비스/위약금</b>까지 한 번에 정리해서 안내합니다.<br/>
-            <span class="muted">개통 후 설정/데이터 이동/문제 해결도 도와드려요.</span>
+          <p class="hero__desc">
+            청년통신은 <b>조건을 숨긴 미끼 가격</b>이 아니라,
+            <b>실제로 가능한 합리적인 견적</b>을 <b>투명하게</b> 안내합니다.<br/>
+            요금제/지원금/약정/부가서비스/위약금까지 한 번에 정리해드려요.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:01052442802">📞 전화 상담</a>
-            <a class="btn btn-ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">💬 카톡 상담</a>
-            <a class="btn btn-ghost" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">⭐ 네이버플레이스</a>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="tel:01052442802">📞 전화 상담</a>
+            <a class="btn btn--ghost btn--lg" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">💬 카톡 상담</a>
+            <a class="btn btn--ghost btn--lg" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">⭐ 네이버플레이스</a>
+            <a class="btn btn--ghost btn--lg" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener">🥕 당근</a>
           </div>
 
-          <div class="trust-row">
-            <div class="trust-card">
-              <b>합리적인 조건</b>
-              <span>미끼가 아닌, 실제 가능한 견적 안내</span>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__k">운영</div>
+              <div class="stat__v">6년</div>
+              <div class="stat__s">같은 자리에서 꾸준히</div>
             </div>
-            <div class="trust-card">
-              <b>6년 운영</b>
-              <span>같은 자리에서 꾸준히 운영해온 매장</span>
+            <div class="stat">
+              <div class="stat__k">원칙</div>
+              <div class="stat__v">조건 공개</div>
+              <div class="stat__s">총 납부 기준 비교</div>
             </div>
-            <div class="trust-card">
-              <b>사후관리</b>
-              <span>설정·데이터 이동·불편 해결 1차 지원</span>
+            <div class="stat">
+              <div class="stat__k">사후관리</div>
+              <div class="stat__v">설정/이전</div>
+              <div class="stat__s">개통 후 1차 지원</div>
             </div>
           </div>
 
-          <div class="mini-note">
-            <b>빠른 상담 팁</b>
-            <span class="muted">카톡/문자에 ①현재 통신사 ②원하는 기종/용량 ③번호이동/기변 여부만 보내주세요.</span>
+          <div class="note">
+            <b>빠른 상담 템플릿</b>
+            <span>①현재 통신사 ②원하는 기종/용량 ③번호이동/기변/신규</span>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="phone-card">
-            <div class="phone-visual" aria-hidden="true">
-              <!-- 배경이 너무 심심하지 않게: 휴대폰 형태 카드(이미지 없어도 보임) -->
-              <div class="phone-shape">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                  <div class="screen-badge">청년통신</div>
-                  <div class="screen-title">투명한 안내</div>
-                  <div class="screen-sub">요금제 · 지원금 · 약정<br/>한 번에 이해되게</div>
-                  <div class="screen-pills">
-                    <span>번호이동</span><span>기기변경</span><span>신규</span>
-                  </div>
-                </div>
+        <div class="hero__right">
+          <div class="glass-card">
+            <div class="glass-card__head">
+              <div class="chip">청년통신</div>
+              <div class="muted">투명한 안내 · 합리적 조건</div>
+            </div>
+
+            <div class="info">
+              <div class="info__row">
+                <span class="info__k">📍 주소</span>
+                <span class="info__v">경기도 남양주시 다산지금로 146번길 27</span>
+              </div>
+              <div class="info__row">
+                <span class="info__k">🕚 영업</span>
+                <span class="info__v">11:00 ~ 19:30</span>
+              </div>
+              <div class="info__row">
+                <span class="info__k">⛔ 휴무</span>
+                <span class="info__v">매주 일요일</span>
+              </div>
+              <div class="info__row">
+                <span class="info__k">📞 전화</span>
+                <span class="info__v"><a class="link" href="tel:01052442802">010-5244-2802</a></span>
               </div>
             </div>
 
-            <div class="phone-info">
-              <div class="info-row">
-                <span class="k">📍 위치</span>
-                <span class="v">경기도 남양주시 다산지금로 146번길 27</span>
-              </div>
-              <div class="info-row">
-                <span class="k">🕚 영업시간</span>
-                <span class="v">11:00 ~ 19:30 (매주 일요일 휴무)</span>
-              </div>
-              <div class="info-row">
-                <span class="k">📞 전화</span>
-                <span class="v"><a class="link" href="tel:01052442802">010-5244-2802</a></span>
-              </div>
+            <div class="glass-card__cta">
+              <a class="btn btn--primary" href="tel:01052442802">전화</a>
+              <a class="btn btn--ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">카톡</a>
+              <a class="btn btn--ghost" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">플레이스</a>
+            </div>
 
-              <div class="btn-row">
-                <a class="btn btn-primary" href="tel:01052442802">전화</a>
-                <a class="btn btn-ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">카톡</a>
-                <a class="btn btn-ghost" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener">당근</a>
-              </div>
+            <div class="mini muted">
+              재고/프로모션은 변동됩니다. 문의 주시면 <b>당일 기준</b>으로 투명하게 안내드려요.
+            </div>
 
-              <p class="muted small">
-                재고/색상/프로모션은 수시로 변동됩니다. 정확한 조건은 문의 주시면
-                당일 기준으로 투명하게 안내드려요.
-              </p>
+            <!-- Optional hero image -->
+            <div class="heroimg">
+              <!-- images/hero.jpg 업로드하면 자동 표시 -->
+              <img src="images/hero.jpg" alt="청년통신 매장/상담 이미지" onerror="this.parentElement.style.display='none'" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- About -->
     <section id="about" class="section">
       <div class="container">
-        <h2>매장 소개</h2>
-        <p class="lead">
-          청년통신은 다산신도시에서 <b>6년째</b> 운영 중인 휴대폰 매장입니다.<br/>
-          상담 시 “좋은 말”보다 <b>조건을 먼저 공개</b>하고, 이해 가능한 기준으로 비교해드려요.
-        </p>
+        <div class="section__head">
+          <h2>매장 소개</h2>
+          <p class="lead">
+            청년통신은 다산신도시에서 <b>6년째</b> 같은 자리에서 운영 중입니다.
+            한 번 오신 분이 다시 찾는 이유는 “설명”을 잘해서가 아니라, <b>조건을 숨기지 않기 때문</b>입니다.
+          </p>
+        </div>
 
-        <div class="grid-3">
-          <div class="card">
-            <h3>✅ 이런 분께 추천</h3>
-            <ul class="list">
+        <div class="cards3">
+          <article class="card">
+            <h3>✅ 추천 대상</h3>
+            <ul>
               <li>요금제/지원금 구조가 헷갈리는 분</li>
-              <li>온라인 가격 조건이 불안하고 확인이 어려운 분</li>
-              <li>개통 후 설정/데이터 이동까지 도움 필요한 분</li>
+              <li>온라인 가격 조건이 불안한 분(유지기간/부가 등)</li>
+              <li>개통 후 설정/데이터 이전까지 도움이 필요한 분</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="card">
-            <h3>🧾 안내 원칙</h3>
-            <ul class="list">
-              <li><b>총 납부 금액</b> 기준으로 비교 안내</li>
-              <li>부가서비스는 <b>필수 여부/유지기간</b> 먼저 안내</li>
-              <li>약정/위약금/할부 조건은 <b>확인 후 진행</b></li>
+          <article class="card">
+            <h3>🧾 상담 원칙</h3>
+            <ul>
+              <li><b>총 납부 금액</b> 기준으로 비교</li>
+              <li>부가서비스는 <b>필수 여부/유지기간</b> 먼저 고지</li>
+              <li>약정/위약금/할부 조건 <b>확인 후 진행</b></li>
             </ul>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <h3>🛠 사후관리</h3>
-            <ul class="list">
+            <ul>
               <li>초기 세팅/데이터 이동 안내</li>
               <li>유심/통신 문제 1차 점검</li>
               <li>필요 시 제조사 A/S 접수 안내</li>
             </ul>
-          </div>
+          </article>
         </div>
 
         <div class="callout">
-          <b>포인트:</b> “조건이 붙은 가격”보다 <b>조건 공개 + 총 납부 기준 비교</b>가 중요합니다.
-          청년통신은 그 과정을 쉽게 정리해드립니다.
+          <b>핵심:</b> “조건이 붙은 가격”보다 <b>조건 공개 + 총 납부 기준 비교</b>가 중요합니다.
         </div>
       </div>
     </section>
 
-    <!-- GUIDE -->
-    <section id="guide" class="section alt">
+    <!-- Guide -->
+    <section id="guide" class="section section--alt">
       <div class="container">
-        <h2>처음 오시는 분 안내</h2>
+        <div class="section__head">
+          <h2>처음 오시는 분 안내</h2>
+          <p class="lead">방문 전에 이 3가지만 확인하면, 불필요한 지출/오해를 크게 줄일 수 있어요.</p>
+        </div>
 
-        <div class="grid-2">
-          <div class="card">
-            <h3>개통/변경 준비물</h3>
-            <ul class="list">
+        <div class="cards2">
+          <article class="card card--soft">
+            <h3>준비물</h3>
+            <ul>
               <li>신분증</li>
               <li>본인 명의 결제수단(필요 시)</li>
-              <li>미성년/대리인 진행은 조건이 다를 수 있어요</li>
+              <li>미성년/대리인 진행은 조건이 달라요</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="card">
-            <h3>방문 전 이렇게 물어보세요</h3>
-            <ul class="list">
+          <article class="card card--soft">
+            <h3>이렇게 물어보세요</h3>
+            <ul>
               <li>월 납부액(요금+할부+보험 포함) 총액</li>
               <li>약정 기간 / 위약금 조건</li>
               <li>부가서비스 필수 여부와 유지기간</li>
             </ul>
-          </div>
+          </article>
         </div>
 
         <div class="steps">
-          <div class="step">
-            <b>1) 조건 확인</b>
-            <span>요금제/지원금/부가/유지기간 공개</span>
-          </div>
-          <div class="step">
-            <b>2) 비교</b>
-            <span>총 납부 금액 기준으로 정리</span>
-          </div>
-          <div class="step">
-            <b>3) 진행</b>
-            <span>이해되면 그때 개통</span>
-          </div>
+          <div class="step"><b>1) 조건 공개</b><span>요금제/부가/유지기간 확인</span></div>
+          <div class="step"><b>2) 비교</b><span>총 납부 금액 기준 정리</span></div>
+          <div class="step"><b>3) 진행</b><span>이해되면 그때 개통</span></div>
         </div>
       </div>
     </section>
@@ -237,121 +251,114 @@
     <!-- FAQ -->
     <section id="faq" class="section">
       <div class="container">
-        <h2>자주 묻는 질문</h2>
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="lead">많이 물어보시는 것만 추려서 간단히 정리했어요.</p>
+        </div>
 
-        <details class="faq">
-          <summary>Q. 번호이동/기변/신규 중 뭐가 유리해요?</summary>
-          <div class="faq-body">
-            <p>
-              현재 통신사/약정/위약금/원하는 기종에 따라 달라집니다.
-              청년통신은 <b>총 납부 금액 기준</b>으로 비교해드려요.
-            </p>
-          </div>
-        </details>
+        <div class="faq">
+          <details>
+            <summary>번호이동/기변/신규 중 뭐가 유리해요?</summary>
+            <div class="faq__body">
+              현재 통신사/약정/위약금/원하는 기종에 따라 달라요. 청년통신은 <b>총 납부 금액 기준</b>으로 비교해드립니다.
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>Q. “성지 가격”이랑 왜 달라 보이나요?</summary>
-          <div class="faq-body">
-            <p>
-              온라인 가격은 특정 요금제·부가서비스·유지기간이 포함된 경우가 많습니다.
-              저희는 <b>조건을 먼저 공개</b>하고, 실제 가능한 기준으로 안내합니다.
-            </p>
-          </div>
-        </details>
+          <details>
+            <summary>“성지 가격”이랑 왜 달라 보이나요?</summary>
+            <div class="faq__body">
+              온라인 가격은 특정 요금제·부가서비스·유지기간 조건이 포함된 경우가 많아요.
+              저희는 <b>조건을 먼저 공개</b>하고 실제 가능한 기준으로 안내합니다.
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>Q. 부가서비스 꼭 해야 하나요?</summary>
-          <div class="faq-body">
-            <p>
-              프로모션 조건에 포함될 수 있습니다.
-              청년통신은 <b>필수 여부/유지기간/해지 시점</b>을 명확히 안내드립니다.
-            </p>
-          </div>
-        </details>
+          <details>
+            <summary>부가서비스 꼭 해야 하나요?</summary>
+            <div class="faq__body">
+              프로모션 조건에 포함될 수 있어요. 청년통신은 <b>필수 여부/유지기간/해지 시점</b>을 명확히 안내드립니다.
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>Q. 개통 후 불편하면 어떻게 해요?</summary>
-          <div class="faq-body">
-            <p>
-              설정/통신 문제 1차 점검을 도와드리고, 필요 시 제조사 A/S 안내도 해드립니다.
-              <b>연락 가능한 동네 매장</b>의 장점을 살려 끝까지 응대하겠습니다.
-            </p>
-          </div>
-        </details>
+          <details>
+            <summary>개통 후 불편하면 어떻게 해요?</summary>
+            <div class="faq__body">
+              설정/통신 문제 1차 점검을 도와드리고, 필요 시 제조사 A/S 절차도 안내해요.
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>Q. 왜 가격표를 안 올리나요?</summary>
-          <div class="faq-body">
-            <p>
-              조건은 <b>요금제/프로모션/재고</b>에 따라 변동이 커서,
-              가격만 보면 오해가 생기기 쉽습니다.
+          <details>
+            <summary>왜 가격표를 안 올리나요?</summary>
+            <div class="faq__body">
+              조건은 요금제/프로모션/재고에 따라 변동이 커서 가격만 보면 오해가 생기기 쉬워요.
               대신 문의 주시면 <b>당일 기준</b>으로 투명하게 안내드립니다.
-            </p>
-          </div>
-        </details>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
       <div class="container">
-        <h2>문의 & 방문</h2>
+        <div class="section__head">
+          <h2>문의 & 방문</h2>
+          <p class="lead">가장 편한 방법으로 연락 주세요. (전화/카톡/플레이스/당근)</p>
+        </div>
 
-        <div class="grid-2">
+        <div class="contactgrid">
           <div class="card">
             <h3>바로 상담하기</h3>
-            <div class="btn-row">
-              <a class="btn btn-primary" href="tel:01052442802">📞 전화</a>
-              <a class="btn btn-ghost" href="sms:01052442802">✉️ 문자</a>
-              <a class="btn btn-ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">💬 카톡</a>
+            <div class="rowbtn">
+              <a class="btn btn--primary" href="tel:01052442802">📞 전화</a>
+              <a class="btn btn--ghost" href="sms:01052442802">✉️ 문자</a>
+              <a class="btn btn--ghost" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener">💬 카톡</a>
             </div>
 
-            <p class="muted mt">
-              빠른 상담을 위해 아래 3가지만 보내주세요.<br/>
-              ① 현재 통신사 ② 원하는 기종/용량 ③ 번호이동/기변/신규
-            </p>
-
-            <div class="mini-links">
+            <div class="inline-links">
               <a class="link" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">네이버플레이스</a>
-              <span class="dot">•</span>
+              <span class="sep">·</span>
               <a class="link" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener">당근 프로필</a>
+            </div>
+
+            <div class="note note--light">
+              <b>빠른 상담 템플릿</b>
+              <span>①현재 통신사 ②기종/용량 ③번호이동/기변/신규</span>
             </div>
           </div>
 
           <div class="card">
             <h3>매장 정보</h3>
-            <ul class="list">
-              <li><b>상호</b>: 청년통신</li>
-              <li><b>주소</b>: 경기도 남양주시 다산지금로 146번길 27</li>
-              <li><b>영업시간</b>: 11:00 ~ 19:30</li>
-              <li><b>휴무</b>: 매주 일요일</li>
-              <li><b>전화</b>: <a class="link" href="tel:01052442802">010-5244-2802</a></li>
-            </ul>
-
-            <div class="btn-row">
-              <a class="btn btn-ghost" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">🗺 네이버플레이스/지도</a>
-              <a class="btn btn-ghost" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener">🥕 당근</a>
+            <div class="kv">
+              <div class="kv__row"><span>상호</span><b>청년통신</b></div>
+              <div class="kv__row"><span>주소</span><b>경기도 남양주시 다산지금로 146번길 27</b></div>
+              <div class="kv__row"><span>영업시간</span><b>11:00 ~ 19:30</b></div>
+              <div class="kv__row"><span>휴무</span><b>매주 일요일</b></div>
+              <div class="kv__row"><span>전화</span><b><a class="link" href="tel:01052442802">010-5244-2802</a></b></div>
             </div>
 
-            <div class="footer-note">
-              <p>
-                <b>약속</b> — 조건을 숨기지 않고, 이해 가능한 설명으로 상담하겠습니다.<br/>
-                “합리적인 조건 + 친절 + 사후관리”로 오래 운영하는 이유를 보여드릴게요.
-              </p>
+            <div class="rowbtn">
+              <a class="btn btn--ghost" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener">🗺 플레이스/지도</a>
+              <a class="btn btn--ghost" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener">🥕 당근</a>
+            </div>
+
+            <div class="promise">
+              <b>약속</b>
+              <p>조건을 숨기지 않고, 이해 가능한 설명으로 상담합니다.<br/>“합리적 조건 + 친절 + 사후관리”로 6년 운영해왔습니다.</p>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container footer__inner">
       <div>
-        <b>청년통신</b>
-        <p class="muted small">© <span id="y"></span> 청년통신. All rights reserved.</p>
+        <div class="footer__brand">청년통신</div>
+        <div class="muted">© <span id="y"></span> 청년통신. All rights reserved.</div>
       </div>
-      <div class="footer-links">
+      <div class="footer__links">
         <a href="#about">매장소개</a>
         <a href="#guide">안내</a>
         <a href="#faq">FAQ</a>
