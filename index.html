@@ -14,7 +14,7 @@
     <div class="container top-inner">
       <a class="brand" href="#top" aria-label="청년통신 홈">
         <span class="brand-logo" aria-hidden="true">
-          <!-- 청년통신 로고(휴대폰+신호) : 완전 새로 만든 아이콘 -->
+          <!-- 청년통신 로고(휴대폰+신호) -->
           <svg viewBox="0 0 44 44" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
@@ -30,12 +30,51 @@
             <path d="M37 14c4.3 4.3 4.3 12.7 0 17" fill="none" stroke="#00b3ff" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
           </svg>
         </span>
+
         <span class="brand-text">청년통신</span>
+
+        <!-- ✅ SK/KT/LG 공식판매점 라벨 + 로고(브랜드 느낌 강화, SVG로 직접 구성) -->
+        <span class="carrier-bar" aria-label="SK KT LG 공식판매점">
+          <span class="carrier-pill">
+            <span class="carrier-logos" aria-hidden="true">
+              <!-- SKT -->
+              <span class="logo-badge skt" title="SKT" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 8.5c1.7-2.1 4.3-3.1 6.8-2.7 1.8.3 3.1 1.4 3.4 2.8.4 2-1.3 3.6-3.3 4l-2 .4c-1.3.2-2.2.7-2.6 1.5-.5.9-.2 1.9.8 2.5 1.6 1 4 .7 5.7-.6" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linecap="round"/>
+                  <path d="M6.6 14.8c.6 2.8 3.4 4.7 6.9 4.3" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+                </svg>
+                <span>SKT</span>
+              </span>
+
+              <!-- KT -->
+              <span class="logo-badge kt" title="KT" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 6v12M7 12l10-6M7 12l10 6" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>KT</span>
+              </span>
+
+              <!-- LGU+ -->
+              <span class="logo-badge lgu" title="LGU+" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 7v10h6" fill="none" stroke="rgba(255,255,255,.92)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.5 9.2h2.8" stroke="rgba(255,255,255,.92)" stroke-width="1.9" stroke-linecap="round"/>
+                  <path d="M15.5 14.8h2.8" stroke="rgba(255,255,255,.92)" stroke-width="1.9" stroke-linecap="round"/>
+                  <path d="M19.4 12h0" stroke="rgba(255,255,255,.92)" stroke-width="3.2" stroke-linecap="round"/>
+                </svg>
+                <span>LGU+</span>
+              </span>
+            </span>
+
+            <span class="carrier-text">공식판매점</span>
+          </span>
+        </span>
       </a>
 
       <nav class="top-nav">
         <a href="#contact" class="nav-link">문의</a>
         <a href="#gallery" class="nav-link">매장/후기</a>
+        <a href="#about" class="nav-link">설명/Q&A</a>
         <a href="#consent" class="nav-link">사전승낙서</a>
       </nav>
     </div>
@@ -48,6 +87,17 @@
     <div class="container hero-grid">
       <!-- Left -->
       <section class="hero-left">
+        <!-- ✅ 6) 맨위에 휴대폰 관련 큰 이미지(교체용) -->
+        <div class="hero-media" aria-label="휴대폰 대표 이미지">
+          <!-- assets/hero-phone.jpg 로 파일 넣으면 바로 표시됨 -->
+          <img class="hero-img" src="./assets/hero-phone.jpg" alt="휴대폰 이미지 (교체 가능)" loading="eager" />
+          <div class="hero-img-overlay" aria-hidden="true"></div>
+          <div class="hero-img-text">
+            <div class="hit-title">휴대폰 · 인터넷 · TV</div>
+            <div class="hit-sub">조건 숨김 없이 “총 납부 기준”으로 비교</div>
+          </div>
+        </div>
+
         <div class="chips">
           <span class="chip chip-blue">다산신도시</span>
           <span class="chip">6년 운영</span>
@@ -69,32 +119,41 @@
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:010-5244-2802">
             <span class="btn-ico" aria-hidden="true">
-              <!-- phone -->
               <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.7 3.2 3.4 4.9 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.4.6 3.7.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.4 21.1 2.9 13.6 2.9 4.9c0-.6.5-1.1 1.1-1.1H7c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
             </span>
             전화 상담
           </a>
 
-          <a class="btn btn-soft" href="#contact">
+          <!-- ✅ 2) 카톡 아이콘 더 브랜드 느낌 + ✅ 3) 링크 연결 -->
+          <a class="btn btn-soft" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener noreferrer">
             <span class="btn-ico" aria-hidden="true">
-              <!-- chat -->
-              <svg viewBox="0 0 24 24"><path d="M4 4h16v11H7l-3 3V4zm3 5h10v2H7V9zm0-3h10v2H7V6z"/></svg>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4c-4.6 0-8.3 2.8-8.3 6.3 0 2.2 1.4 4.1 3.6 5.2l-.8 3.2c-.1.4.3.7.7.5l3.6-2.2c.4.1.8.1 1.2.1 4.6 0 8.3-2.8 8.3-6.3S16.6 4 12 4z" fill="#1f1f1f"/>
+                <path d="M8.2 9.4h7.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M8.2 12.1h5.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
             </span>
             카톡 상담
           </a>
 
-          <a class="btn btn-soft" href="#contact">
+          <!-- ✅ 3) 네이버 플레이스 링크 연결 -->
+          <a class="btn btn-soft" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener noreferrer">
             <span class="btn-ico" aria-hidden="true">
-              <!-- map pin -->
-              <svg viewBox="0 0 24 24"><path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2zm0 3.3a2.3 2.3 0 1 0 0 4.6 2.3 2.3 0 0 0 0-4.6z"/></svg>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2z" fill="#00c73c"/>
+                <path d="M10 7h4v8h-2.1L10 12.2V15H8V7h2l2 2.8V7z" fill="#ffffff"/>
+              </svg>
             </span>
             네이버플레이스
           </a>
 
-          <a class="btn btn-soft" href="#contact">
+          <!-- ✅ 3) 당근 링크 연결 -->
+          <a class="btn btn-soft" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener noreferrer">
             <span class="btn-ico" aria-hidden="true">
-              <!-- carrot-ish -->
-              <svg viewBox="0 0 24 24"><path d="M14.7 3.3c.9.9 1.2 2.1.9 3.2l-1.2 4.2 2.1 2.1c.4.4.4 1 0 1.4l-6.8 6.8c-.4.4-1 .4-1.4 0L6.2 19c-.6-.6-.8-1.5-.5-2.3l2.4-6.7c.3-.8 1.1-1.4 2-1.5l4.2-.5c1.1-.1 2.1-.7 2.8-1.4l.4-.4c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-.4.4c-.2.2-.5.2-.7 0l-1.6-1.6c-.2-.2-.2-.5 0-.7l.4-.4c.6-.6 1.5-.6 2.2 0z"/></svg>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.7 3.3c.9.9 1.2 2.1.9 3.2l-1.2 4.2 2.1 2.1c.4.4.4 1 0 1.4l-6.8 6.8c-.4.4-1 .4-1.4 0L6.2 19c-.6-.6-.8-1.5-.5-2.3l2.4-6.7c.3-.8 1.1-1.4 2-1.5l4.2-.5c1.1-.1 2.1-.7 2.8-1.4l.4-.4c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-.4.4c-.2.2-.5.2-.7 0l-1.6-1.6c-.2-.2-.2-.5 0-.7l.4-.4c.6-.6 1.5-.6 2.2 0z" fill="#ff6b2c"/>
+                <circle cx="10" cy="12" r="1.2" fill="#ffffff" opacity="0.95"/>
+              </svg>
             </span>
             당근
           </a>
@@ -117,12 +176,13 @@
             <div class="vdesc">총 납부 기준 비교</div>
           </div>
 
+          <!-- ✅ 5) 사후관리 구체화 -->
           <div class="vcard">
             <div class="vcard-top">
               <span class="vlabel">사후관리</span>
-              <span class="vtitle">설정/이전</span>
+              <span class="vtitle">필름·점검</span>
             </div>
-            <div class="vdesc">개통 후 1차 지원</div>
+            <div class="vdesc">필름 / 요금제 체크 / 설정 도움</div>
           </div>
         </div>
 
@@ -188,8 +248,8 @@
 
           <div class="mini-cta">
             <a class="btn btn-primary btn-sm" href="tel:010-5244-2802">전화</a>
-            <a class="btn btn-soft btn-sm" href="#contact">카톡</a>
-            <a class="btn btn-soft btn-sm" href="#contact">플레이스</a>
+            <a class="btn btn-soft btn-sm" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener noreferrer">카톡</a>
+            <a class="btn btn-soft btn-sm" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener noreferrer">플레이스</a>
           </div>
 
           <div class="note">
@@ -215,7 +275,7 @@
             </div>
             <div class="pitem">
               <div class="pnum">사후지원</div>
-              <div class="plabel">설정/이전</div>
+              <div class="plabel">필름·요금제 체크</div>
             </div>
           </div>
 
@@ -248,7 +308,8 @@
       </aside>
     </div>
   </main>
-  <!-- About + FAQ (복구) -->
+
+  <!-- About + FAQ -->
   <section class="section" id="about">
     <div class="container">
       <div class="cards-2">
@@ -273,10 +334,21 @@
               </div>
             </div>
 
+            <!-- ✅ 5) 사후관리 구체화 -->
             <div class="about-item">
               <div class="about-k">사후관리</div>
               <div class="about-v">
-                개통 후 <b>데이터 이전 / 초기 설정</b> 등 1차 도움 가능합니다.
+                개통 후 <b>필름</b> / <b>데이터 이전</b> / <b>초기 설정</b> / <b>요금제 체크</b> 등
+                필요한 부분을 깔끔하게 도와드립니다.
+              </div>
+            </div>
+
+            <!-- ✅ 4) 인터넷/TV 문구 자연스럽게 포함 -->
+            <div class="about-item">
+              <div class="about-k">인터넷·TV도 같이</div>
+              <div class="about-v">
+                휴대폰뿐 아니라 <b>인터넷/TV</b>도 함께 상담 가능합니다.
+                결합/약정/혜택까지 같이 비교해드려요.
               </div>
             </div>
           </div>
@@ -319,6 +391,19 @@
               A. 예약 없이도 가능하지만, 대기 없이 보려면 <b>카톡/전화</b>로 한 번 문의하시면 편해요.
             </div>
           </details>
+
+          <!-- ✅ 4) 인터넷/TV 질문(“아정x 보다 많이 나오나요?”) -->
+          <details class="faq">
+            <summary>Q. 인터넷·TV는 “아정x”보다 많이 나오나요?</summary>
+            <div class="faq-a">
+              A. 조건(주소지/통신사/결합/약정/설치 가능 여부/프로모션)에 따라 달라서,
+              <b>무조건 더 나온다고 단정</b>하진 않습니다.<br />
+              대신 청년통신은 <b>당일 기준</b>으로
+              “현금/상품권/월요금/결합할인/사은품 조건”을 <b>한 번에 비교</b>해서
+              <b>실제로 유리한 쪽</b>으로 안내드려요.<br />
+              (상담 시: <b>주소(동/호)</b> + <b>현재 통신사</b> + <b>휴대폰 결합 여부</b> 알려주시면 가장 정확합니다.)
+            </div>
+          </details>
         </div>
       </div>
     </div>
@@ -352,13 +437,13 @@
               문자
             </a>
 
-            <!-- 카카오(유사) 아이콘 -->
-            <a class="btn btn-soft" href="#" aria-label="카카오톡 상담 링크(여기에 카톡 링크 넣기)">
+            <!-- ✅ 카카오 링크 연결 -->
+            <a class="btn btn-soft" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener noreferrer" aria-label="카카오톡 상담">
               <span class="brand-ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18">
-                  <path d="M12 4c-4.4 0-8 2.7-8 6.1 0 2.2 1.5 4.1 3.7 5.2l-.7 3c-.1.3.2.6.5.4l3.5-2.1c.3 0 .7.1 1 .1 4.4 0 8-2.7 8-6.1S16.4 4 12 4z" fill="#2f2f2f"/>
-                  <path d="M8.2 9.8h7.6" stroke="#ffd54d" stroke-width="1.6" stroke-linecap="round"/>
-                  <path d="M8.2 12.3h5.6" stroke="#ffd54d" stroke-width="1.6" stroke-linecap="round"/>
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4c-4.6 0-8.3 2.8-8.3 6.3 0 2.2 1.4 4.1 3.6 5.2l-.8 3.2c-.1.4.3.7.7.5l3.6-2.2c.4.1.8.1 1.2.1 4.6 0 8.3-2.8 8.3-6.3S16.6 4 12 4z" fill="#1f1f1f"/>
+                  <path d="M8.2 9.4h7.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M8.2 12.1h5.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
               </span>
               카톡
@@ -366,11 +451,11 @@
           </div>
 
           <div class="link-row">
-            <!-- 네이버/플레이스(유사) -->
-            <a class="icon-link" href="#" aria-label="네이버 플레이스 링크(여기에 넣기)">
+            <!-- ✅ 네이버 플레이스 링크 연결 -->
+            <a class="icon-link" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener noreferrer" aria-label="네이버 플레이스 링크">
               <span class="icon-badge" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18">
-                  <path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2z" fill="#10c07f"/>
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2z" fill="#00c73c"/>
                   <path d="M10 7h4v8h-2.1L10 12.2V15H8V7h2l2 2.8V7z" fill="#ffffff" opacity="0.95"/>
                 </svg>
               </span>
@@ -379,9 +464,10 @@
 
             <span class="dot">·</span>
 
-            <a class="icon-link" href="#" aria-label="당근 프로필 링크(여기에 넣기)">
+            <!-- ✅ 당근 링크 연결 -->
+            <a class="icon-link" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener noreferrer" aria-label="당근 프로필 링크">
               <span class="icon-badge" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18">
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.7 3.3c.9.9 1.2 2.1.9 3.2l-1.2 4.2 2.1 2.1c.4.4.4 1 0 1.4l-6.8 6.8c-.4.4-1 .4-1.4 0L6.2 19c-.6-.6-.8-1.5-.5-2.3l2.4-6.7c.3-.8 1.1-1.4 2-1.5l4.2-.5c1.1-.1 2.1-.7 2.8-1.4l.4-.4c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-.4.4c-.2.2-.5.2-.7 0l-1.6-1.6c-.2-.2-.2-.5 0-.7l.4-.4c.6-.6 1.5-.6 2.2 0z" fill="#ff6b2c"/>
                   <circle cx="10" cy="12" r="1.2" fill="#ffffff" opacity="0.95"/>
                 </svg>
@@ -396,6 +482,17 @@
               <span class="pill">① 현재 통신사</span>
               <span class="pill">② 기종/용량</span>
               <span class="pill">③ 번호이동/기변/신규</span>
+            </div>
+          </div>
+
+          <!-- ✅ 인터넷/TV 빠른 질문 템플릿 -->
+          <div class="template-box template-box-soft">
+            <div class="tb-title">인터넷/TV 빠른 상담 템플릿</div>
+            <div class="tb-items">
+              <span class="pill">① 설치 주소(동/호)</span>
+              <span class="pill">② 현재 통신사</span>
+              <span class="pill">③ 휴대폰 결합 여부</span>
+              <span class="pill">④ 인터넷만 / TV 포함</span>
             </div>
           </div>
         </div>
@@ -413,24 +510,35 @@
           </div>
 
           <div class="store-actions">
-            <a class="btn btn-soft" href="#" aria-label="네이버 플레이스/지도 링크(여기에 넣기)">
+            <a class="btn btn-soft" href="https://naver.me/Fiocef9j" target="_blank" rel="noopener noreferrer" aria-label="네이버 플레이스/지도 링크">
               <span class="brand-ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18">
-                  <path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2z" fill="#10c07f"/>
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2c3.3 0 6 2.6 6 5.9 0 4.4-6 13.1-6 13.1S6 12.3 6 7.9C6 4.6 8.7 2 12 2z" fill="#00c73c"/>
                   <path d="M10 7h4v8h-2.1L10 12.2V15H8V7h2l2 2.8V7z" fill="#ffffff" opacity="0.95"/>
                 </svg>
               </span>
               플레이스/지도
             </a>
 
-            <a class="btn btn-soft" href="#" aria-label="당근 링크(여기에 넣기)">
+            <a class="btn btn-soft" href="https://www.daangn.com/kr/local-profile/bktvio6aafd7/" target="_blank" rel="noopener noreferrer" aria-label="당근 링크">
               <span class="brand-ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18">
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.7 3.3c.9.9 1.2 2.1.9 3.2l-1.2 4.2 2.1 2.1c.4.4.4 1 0 1.4l-6.8 6.8c-.4.4-1 .4-1.4 0L6.2 19c-.6-.6-.8-1.5-.5-2.3l2.4-6.7c.3-.8 1.1-1.4 2-1.5l4.2-.5c1.1-.1 2.1-.7 2.8-1.4l.4-.4c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-.4.4c-.2.2-.5.2-.7 0l-1.6-1.6c-.2-.2-.2-.5 0-.7l.4-.4c.6-.6 1.5-.6 2.2 0z" fill="#ff6b2c"/>
                   <circle cx="10" cy="12" r="1.2" fill="#ffffff" opacity="0.95"/>
                 </svg>
               </span>
               당근
+            </a>
+
+            <a class="btn btn-soft" href="https://open.kakao.com/o/sXogyOei" target="_blank" rel="noopener noreferrer" aria-label="카카오톡 상담">
+              <span class="brand-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4c-4.6 0-8.3 2.8-8.3 6.3 0 2.2 1.4 4.1 3.6 5.2l-.8 3.2c-.1.4.3.7.7.5l3.6-2.2c.4.1.8.1 1.2.1 4.6 0 8.3-2.8 8.3-6.3S16.6 4 12 4z" fill="#1f1f1f"/>
+                  <path d="M8.2 9.4h7.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M8.2 12.1h5.6" stroke="#ffe34d" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </span>
+              카톡
             </a>
           </div>
 
@@ -438,7 +546,7 @@
             <div class="promise-title">약속</div>
             <p class="promise-text">
               조건을 숨기지 않고, 이해 가능한 설명으로 상담합니다.<br />
-              <b>“합리적 조건 + 친절 + 사후관리”</b>로 6년 운영해왔습니다.
+              <b>“합리적 조건 + 친절 + 사후관리(필름·요금제 체크)”</b>로 6년 운영해왔습니다.
             </p>
           </div>
         </div>
@@ -475,8 +583,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
