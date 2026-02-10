@@ -846,3 +846,56 @@ img{ max-width: 100%; display:block; }
   .carrier-pill{ display:none; } /* 모바일 상단 과밀 방지: 필요하면 삭제 가능 */
   .hero-img{ height: 200px; }
 }
+/* ===== 커피샵 전단지 혜택 배너 ===== */
+.flyer-perk{
+  margin: 10px 0 14px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 246, 232, .92), rgba(255, 246, 232, .78));
+  border: 1px solid rgba(120, 80, 40, .14);
+  box-shadow: 0 10px 30px rgba(10, 20, 40, .06);
+}
+
+.flyer-perk__row{
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.flyer-perk__icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(120, 80, 40, .08);
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.flyer-perk__title{
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: rgba(40, 28, 16, .92);
+  margin-bottom: 2px;
+}
+
+.flyer-perk__desc{
+  font-weight: 800;
+  font-size: 14.5px;
+  letter-spacing: -0.2px;
+  color: rgba(40, 28, 16, .92);
+}
+
+.flyer-perk__sub{
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: rgba(40, 28, 16, .62);
+}
+
+@media (max-width: 420px){
+  .flyer-perk{ padding: 12px 12px; border-radius: 14px; }
+  .flyer-perk__title{ font-size: 14.5px; }
+  .flyer-perk__desc{ font-size: 14px; }
+}
